@@ -2,10 +2,8 @@
 
 require 'rspec'
 require_relative '../parser'
-require 'byebug'
 
 describe Parser do
-  let(:parser) { true }
   let(:correct_file) { File.open('./lab2.txt', 'r') }
   let(:incorrect_file) { File.open('./lab2-1.txt', 'r') }
   let(:empty_file) { File.open('./empty-lab.txt', 'r') }
