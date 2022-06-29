@@ -8,7 +8,7 @@ class LaboratoryTestResult
   LABORATORY_RESULT_FORMAT = {
     float: ['20' => 20.0],
     boolean: [{ 'NEGATIVE' => -1.0 }, { 'POSITIVE' => -2.0 }],
-    nil_3plus: [{ NIL: '-1.0' }, { '+' => -2.0 }, { '++'	=> -2.0 }, { '+++'	=> -3.0 }]
+    nil_3plus: [{ NIL: -1.0 }, { '+' => -2.0 }, { '++'	=> -2.0 }, { '+++'	=> -3.0 }]
   }.freeze
 
   attr_accessor :code, :result, :format, :comment
